@@ -50,12 +50,27 @@ html {
   margin-bottom: 5px;
   background-color: #f69f9f;
   gap: 10px;
+  position: relative;
+}
 
+.update-tasks {
+  position: absolute;
+  right: -432px;
+  width: 430px;
+}
+
+.display-update {
+  display: none !important;
+}
+
+.close-update {
+  width: 40px !important;
 }
 
 .item-content {
   text-align: left;
   font-weight: 300;
+  width: 90%;
 }
 
 .item-active {
@@ -63,9 +78,11 @@ html {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  width: 10%;
 }
 
-.item span {
+.item span,
+.update-btn {
   cursor: pointer;
 }
 
@@ -111,4 +128,10 @@ html {
   background-color: rgb(234, 46, 77);
   border: 1px solid #eab3b3;
   cursor: pointer;
+}
+
+/* active line-through */
+
+.active {
+  text-decoration: line-through;
 }
